@@ -5,8 +5,8 @@ class Rectangle {
     this.b = b;
   }
 
-  isSquare(a, b) {
-    if (a === b) {
+  isSquare() {
+    if (this.a === this.b) {
       return true;
     } else {
       return false;
@@ -14,15 +14,15 @@ class Rectangle {
 
   }
 
-  getArea(a, b) {
-    return a * b;
+  getArea() {
+    return this.a * this.b;
   }
 
-  getPerimeter(a, b) {
-    return (a + b) * 2;
+  getPerimeter() {
+    return (this.a + this.b) * 2;
   }
 }
 
 const rectangle = new Rectangle(10, 5);
 
-module.exports = rectangle;
+module.exports = Rectangle;

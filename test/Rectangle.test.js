@@ -7,15 +7,15 @@ describe('Rectangle', () => {
   // give the test a label using it
 
   it('isSquare checking', () => {
-    assert.strictEqual(Rectangle.isSquare(4, 4), true);
+    assert.strictEqual(new Rectangle(4, 4).isSquare(), true);
   });
 
   it('getArea checking', () => {
-    assert.strictEqual(Rectangle.getArea(13, 7), 91);
+    assert.strictEqual(new Rectangle(13, 7).getArea(), 91);
   });
 
   it('getPerimeter', () => {
-    assert.strictEqual(Rectangle.getPerimeter(13, 7), 40);
+    assert.strictEqual(new Rectangle(13, 7).getPerimeter(), 40);
   });
 
 
