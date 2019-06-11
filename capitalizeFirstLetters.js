@@ -6,20 +6,21 @@ const assert = require('assert');
 // WRITE THE ACTUAL FUNCTION HERE
 
 function capitalizeFirstLetters(input) {
-  // FIRST METHOD
-  // let output = ""
-  // for (let i = 0; i < input.length; i++) {
-  //   if (i === 0) {
-  //     output += input[0].toUpperCase();
-  //   }
-  //   else {
-  //     output += input[i];
-  //   }
-  // }
-  // return output;
-  return input.length > 0
-    ? input[0].toUpperCase() + input.slice(1)
-    : "";
+  let result = ''
+  if (input.length <= 0) {
+    return '';
+
+  } else {
+    for (let i = 0; i < input.length; i++) {
+      if (input[i - 1] === " " || i === 0) {
+        result += (input[i].toUpperCase());
+      }
+      else if (i !== 0) {
+        result += input[i];
+      }
+    }
+    return result;
+  }
 }
 
 // Check that capitalizeFirstLetters is a function
