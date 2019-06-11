@@ -2,7 +2,7 @@
   "name": "tdd",
   "version": "1.0.0",
   "description": "",
-  "main": "capitalizeFirstLetters.js",
+  "main": "Rectangle.js",
   "directories": {
     "test": "test"
   },
