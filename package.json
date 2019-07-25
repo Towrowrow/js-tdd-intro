@@ -21,5 +21,8 @@
   "homepage": "https://github.com/Towrowrow/js-tdd-intro#readme",
   "devDependencies": {
     "mocha": "^6.1.4"
-  }
+  },
+  "dependencies": {
+  "lodash": ">=4.17.13"
+}
 }
